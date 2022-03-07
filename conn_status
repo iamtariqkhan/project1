@@ -1,0 +1,23 @@
+
+<?php
+        switch (connection_status())
+        {
+        case CONNECTION_NORMAL:
+         echo $txt = 'Connection is in a normal state';
+        break;
+        case CONNECTION_ABORTED:
+        echo $txt = 'Connection aborted';
+        break;
+        case CONNECTION_TIMEOUT:
+        echo $txt = 'Connection timed out';
+        break;
+        case (CONNECTION_ABORTED & CONNECTION_TIMEOUT):
+        echo $txt = 'Connection aborted and timed out';
+        break;
+        default:
+        echo $txt = 'Unknown';
+        break;
+        }
+
+        // echo $txt;
+?>
