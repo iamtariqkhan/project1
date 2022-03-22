@@ -36,7 +36,7 @@
                 $pdf->Image(__DIR__."/certificates/".$name.$i.".jpg",0,0,11.7,8.27);
                 $pdf->Output(__DIR__."/certificates/$name.$i.pdf","F");
                 imagedestroy($image);
-                unlink(__DIR__."/certificates/".$name.$i.".jpg"); 
+                unlink(__DIR__."/certificates/".$name.$i.".jpg");
             }
         }
 
