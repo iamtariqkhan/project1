@@ -24,7 +24,7 @@
             $color = imagecolorallocate($image, 19, 21, 22);
             $name = $data[$i][0]; //[1][0], [2][0], [][], [][]
             $cert_type = $data[$i][1];//[1][1], [2][1], [][]
-            imagettftext($image, 25, 0, 370, 340, $color, $font, $name,);
+            imagettftext($image, 25, 0, 400, 340, $color, $font, $name,);
             imagettftext($image, 25, 0, 370, 470, $color, $font, $cert_type,);
             if($type=='jpg'){
                 imagejpeg($image, __DIR__."/certificates/".$name.$i.".jpg");
